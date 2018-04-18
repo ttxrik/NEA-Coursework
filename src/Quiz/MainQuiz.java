@@ -2,6 +2,8 @@ package Quiz;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
+
 import Main.Input;
 
 public class MainQuiz {
@@ -14,7 +16,7 @@ public class MainQuiz {
     public static int grade;
     public static int percentage;
 
-    public static void Quiz() {
+    public static void Quiz() throws IOException {
 
 
         if (difficulty.equalsIgnoreCase("easy")) {
