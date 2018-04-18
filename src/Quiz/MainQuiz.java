@@ -26,7 +26,7 @@ public class MainQuiz {
                 Music.Easy();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
-                ComputerScience.Easy();
+                //ComputerScience.Easy();
             }
 
         }
