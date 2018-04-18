@@ -1,0 +1,5 @@
+Q4 - Which protocol is used for terminals within a network.
+
+a) TCP.
+b) UDP
+c) Telnet.

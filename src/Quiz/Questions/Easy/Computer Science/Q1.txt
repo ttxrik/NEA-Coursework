@@ -1,0 +1,5 @@
+Q1 - What is a compiler? 
+
+a) A programming language.
+b) A program that converts high level code into machine code.
+c) A piece of hardware.

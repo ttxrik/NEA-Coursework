@@ -1,0 +1,5 @@
+Q2 - Which of the following is a low-level programming language?
+
+a) Java.
+b) Kotlin.
+c) Assembly.
