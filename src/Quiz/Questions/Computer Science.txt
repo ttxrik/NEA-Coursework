@@ -1,0 +1,31 @@
+Q1 - What is a compiler? 
+
+a) A programming language.
+b) A program that converts high level code into machine code.
+c) A piece of hardware.
+
+
+Q2 - Which part of a computer system best fits the analogy: 'the computer's brain'.
+
+a) The motherboard.
+b) The case.
+c) The CPU.
+
+
+Q3 - What is 10010001 as a decimal?
+
+a) 145.
+b) 98.
+c) 146.
+
+Q4 - Which of the following is a low-level programming language?
+
+a) Java.
+b) Kotlin.
+c) Assembly.
+
+Q5 - Which protocol is used for terminals within a network.
+
+a) TCP.
+b) UDP
+c) Telnet.
