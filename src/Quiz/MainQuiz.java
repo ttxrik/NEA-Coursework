@@ -1,5 +1,7 @@
 package Quiz;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import Main.Input;
 
 public class MainQuiz {

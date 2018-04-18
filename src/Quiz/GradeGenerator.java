@@ -1,11 +1,11 @@
 package Quiz;
 
+
 public class GradeGenerator extends MainQuiz{
 
     static String grade;
 
     public void GenerateGrade() {
-
 
     }
 

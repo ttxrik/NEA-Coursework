@@ -1,5 +1,8 @@
 package Quiz;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class ComputerScience extends MainQuiz {
 
 
@@ -15,7 +18,20 @@ public class ComputerScience extends MainQuiz {
 
     }
 
-    private void loadComputerScienceQuestions() {
+    public static void loadComputerScienceQuestions() throws Exception{
+
+        FileReader file = new FileReader("src/Quiz/Questions/Computer Science.txt");
+        BufferedReader reader = new BufferedReader(file);
+
+        String text = "";
+        String line = reader.readLine();
+
+        while (line != null) {
+            text += line;
+            line = reader.readLine();
+
+            System.out.println(text);
+        }
 
     }
 

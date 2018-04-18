@@ -1,18 +1,13 @@
 package Main;
 
+import Quiz.ComputerScience;
+
 public class Main {
 
-    public static void main(String[] args) {
-
-        UsernameGenerator ug = new UsernameGenerator();
-
-        Input input = new Input();
-        input.Registration1();
-        ug.generateusername();
-        input.Registration2();
+    public static void main(String[] args) throws Exception{
 
 
-        System.out.println(input.getUsername());
+        ComputerScience.loadComputerScienceQuestions();
 
 
     }
