@@ -23,4 +23,5 @@ public abstract class QuestionInterface extends MainQuiz{
     void Medium(){}
 
     void Hard(){}
+
 }

@@ -5,33 +5,71 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class ComputerScience extends MainQuiz{
-
-    /* public static Scanner ReadFile() throws IOException {
-
-        File temp = new File("src/Quiz/Questions/Computer Science.txt");
-        Scanner file = new Scanner(temp);
-        
-        return file;
-
-
-    } // Tried, doesn't work */
-
-    // Yes, there's a lot of duplication.. I'm still learning Java btw.. At the end of the day, it works!
+public class ComputerScience extends QuestionInterface{
 
     public static int score;
 
+    @Override
+    void Q1() {
+        System.out.println("Q1 - What is a compiler? \n" +
+                "\n" +
+                "a) A programming language.\n" +
+                "b) A program that converts high level code into machine code.\n" +
+                "c) A piece of hardware.");
+    }
 
-    public static void Easy() throws IOException {
+    @Override
+    void Q2() {
+        System.out.println("Q2 - Which of the following is a low-level programming language?\n" +
+                "\n" +
+                "a) Java.\n" +
+                "b) Kotlin.\n" +
+                "c) Assembly.");
+    }
+
+    @Override
+    void Q3() {
+        System.out.println("Q3 - What is 10010001 as a decimal?\n" +
+                "\n" +
+                "a) 145.\n" +
+                "b) 98.\n" +
+                "c) 146.");
+    }
+
+    @Override
+    void Q4() {
+        System.out.println("Q4 - Which protocol is used for terminals within a network.\n" +
+                "\n" +
+                "a) TCP.\n" +
+                "b) UDP\n" +
+                "c) Telnet.");
+    }
+
+    @Override
+    void A1() {
+        System.out.println("Answer: B");
+    }
+
+    @Override
+    void A2() {
+        System.out.println("Answer: C");
+    }
+
+    @Override
+    void A3() {
+        System.out.println("Answer: A");
+    }
+
+    @Override
+    void A4() {
+        System.out.println("Answer: C");
+    }
+
+
+    @Override
+    public void Easy() {
 
         boolean validation = true;
-        String line1;
-
-        File q1txt = new File("src/Quiz/Questions/Easy/Computer Science/Q1.txt");
-        File q2txt = new File("src/Quiz/Questions/Easy/Computer Science/Q2.txt");
-
-        Scanner q1 = new Scanner(q1txt);
-        Scanner q2 = new Scanner(q2txt);
 
         String input;
 
@@ -39,14 +77,13 @@ public class ComputerScience extends MainQuiz{
             try {
                 Scanner in = new Scanner(System.in);
 
-                while (q1.hasNextLine()) {
-                    System.out.println(q1);
-                }
+                Q1();
 
                 input = in.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A1();
                     break;
 
                 } else if (input.equalsIgnoreCase("b")) {
@@ -54,9 +91,10 @@ public class ComputerScience extends MainQuiz{
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
-                    System.out.println("Please enter either a, b or c");
+                    elsedo();
                     validation = true;
                 }
 
@@ -67,23 +105,22 @@ public class ComputerScience extends MainQuiz{
 
         } while (validation == true);
 
-
         do {
             try {
                 Scanner in2 = new Scanner(System.in);
 
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
+                Q2();
 
                 input = in2.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -91,29 +128,25 @@ public class ComputerScience extends MainQuiz{
                     break;
                 }
                 else {
-                    incorrect();
+                    elsedo();
                     validation = true;
                 }
 
             } catch (Exception e) {
-                incorrect();
+                elsedo();
                 validation = true;
 
             }
         } while (validation = true);
+
+
+
     }
 
-    public static void Medium() throws IOException{
+    @Override
+    public void Medium() {
 
         boolean validation = true;
-
-        File q1txt = new File("src/Quiz/Questions/Easy/Computer Science/Q1.txt");
-        File q2txt = new File("src/Quiz/Questions/Easy/Computer Science/Q2.txt");
-        File q3txt = new File("src/Quiz/Questions/Easy/Computer Science/Q3.txt");
-
-        Scanner q1 = new Scanner(q1txt);
-        Scanner q2 = new Scanner(q2txt);
-        Scanner q3 = new Scanner(q3txt);
 
         String input;
 
@@ -121,14 +154,13 @@ public class ComputerScience extends MainQuiz{
             try {
                 Scanner in = new Scanner(System.in);
 
-                while (q1.hasNextLine()) {
-                    System.out.println(q1);
-                }
+                Q1();
 
                 input = in.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A1();
                     break;
 
                 } else if (input.equalsIgnoreCase("b")) {
@@ -136,9 +168,10 @@ public class ComputerScience extends MainQuiz{
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
-                    System.out.println("Please enter either a, b or c");
+                    elsedo();
                     validation = true;
                 }
 
@@ -149,23 +182,22 @@ public class ComputerScience extends MainQuiz{
 
         } while (validation == true);
 
-
         do {
             try {
                 Scanner in2 = new Scanner(System.in);
 
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
+                Q2();
 
                 input = in2.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -173,12 +205,12 @@ public class ComputerScience extends MainQuiz{
                     break;
                 }
                 else {
-                    incorrect();
+                    elsedo();
                     validation = true;
                 }
 
             } catch (Exception e) {
-                incorrect();
+                elsedo();
                 validation = true;
 
             }
@@ -186,13 +218,11 @@ public class ComputerScience extends MainQuiz{
 
         do {
             try {
-                Scanner in3 = new Scanner(System.in);
+                Scanner in2 = new Scanner(System.in);
 
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
+                Q3();
 
-                input = in3.next();
+                input = in2.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     correct();
@@ -200,19 +230,21 @@ public class ComputerScience extends MainQuiz{
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else {
-                    incorrect();
+                    elsedo();
                     validation = true;
                 }
 
             } catch (Exception e) {
-                incorrect();
+                elsedo();
                 validation = true;
 
             }
@@ -220,19 +252,10 @@ public class ComputerScience extends MainQuiz{
 
     }
 
-    public static void Hard() throws IOException {
+    @Override
+    public void Hard() {
 
         boolean validation = true;
-
-        File q1txt = new File("src/Quiz/Questions/Easy/Computer Science/Q1.txt");
-        File q2txt = new File("src/Quiz/Questions/Easy/Computer Science/Q2.txt");
-        File q3txt = new File("src/Quiz/Questions/Easy/Computer Science/Q3.txt");
-        File q4txt = new File("src/Quiz/Questions/Easy/Computer Science/Q4.txt");
-
-        Scanner q1 = new Scanner(q1txt);
-        Scanner q2 = new Scanner(q2txt);
-        Scanner q3 = new Scanner(q3txt);
-        Scanner q4 = new Scanner(q4txt);
 
         String input;
 
@@ -240,14 +263,13 @@ public class ComputerScience extends MainQuiz{
             try {
                 Scanner in = new Scanner(System.in);
 
-                while (q1.hasNextLine()) {
-                    System.out.println(q1);
-                }
+                Q1();
 
                 input = in.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A1();
                     break;
 
                 } else if (input.equalsIgnoreCase("b")) {
@@ -255,9 +277,10 @@ public class ComputerScience extends MainQuiz{
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
-                    System.out.println("Please enter either a, b or c");
+                    elsedo();
                     validation = true;
                 }
 
@@ -268,23 +291,22 @@ public class ComputerScience extends MainQuiz{
 
         } while (validation == true);
 
-
         do {
             try {
                 Scanner in2 = new Scanner(System.in);
 
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
+                Q2();
 
                 input = in2.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -292,12 +314,46 @@ public class ComputerScience extends MainQuiz{
                     break;
                 }
                 else {
-                    incorrect();
+                    elsedo();
                     validation = true;
                 }
 
             } catch (Exception e) {
-                incorrect();
+                elsedo();
+                validation = true;
+
+            }
+        } while (validation = true);
+
+        do {
+            try {
+                Scanner in2 = new Scanner(System.in);
+
+                Q3();
+
+                input = in2.next();
+
+                if (input.equalsIgnoreCase("a")) {
+                    correct();
+                    break;
+                }
+                else if (input.equalsIgnoreCase("b")) {
+                    incorrect();
+                    A3();
+                    break;
+                }
+                else if (input.equalsIgnoreCase("c")) {
+                    incorrect();
+                    A3();
+                    break;
+                }
+                else {
+                    elsedo();
+                    validation = true;
+                }
+
+            } catch (Exception e) {
+                elsedo();
                 validation = true;
 
             }
@@ -307,52 +363,18 @@ public class ComputerScience extends MainQuiz{
             try {
                 Scanner in3 = new Scanner(System.in);
 
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
-
-                input = in3.next();
-
-                if (input.equalsIgnoreCase("a")) {
-                    correct();
-                    break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
-                    incorrect();
-                    break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
-                    incorrect();
-                    break;
-                }
-                else {
-                    incorrect();
-                    validation = true;
-                }
-
-            } catch (Exception e) {
-                incorrect();
-                validation = true;
-
-            }
-        } while (validation = true);
-
-        do {
-            try {
-                Scanner in3 = new Scanner(System.in);
-
-                while (q2.hasNextLine()) {
-                    System.out.println(q2);
-                }
+                Q4();
 
                 input = in3.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A4();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A4();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -360,23 +382,24 @@ public class ComputerScience extends MainQuiz{
                     break;
                 }
                 else {
-                    incorrect();
+                    elsedo();
                     validation = true;
                 }
 
             } catch (Exception e) {
-                incorrect();
+                elsedo();
                 validation = true;
 
             }
         } while (validation = true);
-
-
-
     }
 
+    protected static void correct() {
+        System.out.println("Correct!");
+        score++;
+    }
 
-    public int getScore() {
+    public static int getScore() {
         return score;
     }
 

@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class History extends QuestionInterface {
 
+    public static int score;
+
     @Override
     void Q1() {
         System.out.println("Q1 - When was Queen Elizabeth born?\n" +
@@ -40,6 +42,26 @@ public class History extends QuestionInterface {
                 "c) France");
     }
 
+    @Override
+    void A1() {
+        System.out.println("Answer: A");
+    }
+
+    @Override
+    void A2() {
+        System.out.println("Answer: B");
+    }
+
+    @Override
+    void A3() {
+        System.out.println("Answer: C");
+    }
+
+    @Override
+    void A4() {
+        System.out.println("Answer: A");
+    }
+
 
     @Override
     public void Easy() {
@@ -62,9 +84,11 @@ public class History extends QuestionInterface {
 
                 } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A1();
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
                     elsedo();
@@ -88,6 +112,7 @@ public class History extends QuestionInterface {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
@@ -96,6 +121,7 @@ public class History extends QuestionInterface {
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else {
@@ -135,9 +161,11 @@ public class History extends QuestionInterface {
 
                 } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A1();
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
                     elsedo();
@@ -161,6 +189,7 @@ public class History extends QuestionInterface {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
@@ -169,6 +198,7 @@ public class History extends QuestionInterface {
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else {
@@ -193,10 +223,12 @@ public class History extends QuestionInterface {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -238,9 +270,11 @@ public class History extends QuestionInterface {
 
                 } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A1();
                     break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A1();
                     break;
                 } else {
                     elsedo();
@@ -264,6 +298,7 @@ public class History extends QuestionInterface {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
@@ -272,6 +307,7 @@ public class History extends QuestionInterface {
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A2();
                     break;
                 }
                 else {
@@ -296,10 +332,12 @@ public class History extends QuestionInterface {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A3();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
@@ -320,11 +358,11 @@ public class History extends QuestionInterface {
 
         do {
             try {
-                Scanner in2 = new Scanner(System.in);
+                Scanner in3 = new Scanner(System.in);
 
                 Q4();
 
-                input = in2.next();
+                input = in3.next();
 
                 if (input.equalsIgnoreCase("a")) {
                     correct();
@@ -332,10 +370,12 @@ public class History extends QuestionInterface {
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
+                    A4();
                     break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
+                    A4();
                     break;
                 }
                 else {
@@ -349,6 +389,15 @@ public class History extends QuestionInterface {
 
             }
         } while (validation = true);
+    }
+
+    protected static void correct() {
+        System.out.println("Correct!");
+        score++;
+    }
+
+    public static int getScore() {
+        return score;
     }
 
 

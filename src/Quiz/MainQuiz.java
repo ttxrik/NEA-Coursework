@@ -65,10 +65,6 @@ public class MainQuiz {
 
     }
 
-    protected static void correct() {
-        System.out.println("Correct!");
-        score++;
-    }
 
     protected static void incorrect() {
         System.out.println("Incorrect!");
@@ -77,11 +73,6 @@ public class MainQuiz {
     protected static void elsedo() {
         System.out.println("Please enter a, b or c");
     }
-
-    public int getScore() {
-        return score;
-    }
-
 
 
 
