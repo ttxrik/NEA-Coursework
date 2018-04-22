@@ -18,11 +18,15 @@ public class MainQuiz {
 
     public static void Quiz() throws IOException {
 
+        History history = new History();
+        ComputerScience computerScience = new ComputerScience();
+        Music music = new Music();
+
 
         if (difficulty.equalsIgnoreCase("easy")) {
 
             if (subject.equalsIgnoreCase("history")) {
-                History.Easy();
+                history.Easy();
             }
             else if (subject.equalsIgnoreCase("music")) {
                 Music.Easy();
@@ -35,7 +39,7 @@ public class MainQuiz {
         else if (difficulty.equalsIgnoreCase("medium")) {
 
             if (subject.equalsIgnoreCase("history")) {
-                History.Medium();
+                history.Medium();
             }
             else if (subject.equalsIgnoreCase("music")) {
                 Music.Medium();
@@ -48,7 +52,7 @@ public class MainQuiz {
         else if (difficulty.equalsIgnoreCase("hard")) {
 
             if (subject.equalsIgnoreCase("history")) {
-                History.Hard();
+                history.Hard();
             }
             else if (subject.equalsIgnoreCase("music")) {
                 Music.Hard();
@@ -59,6 +63,19 @@ public class MainQuiz {
         }
 
 
+    }
+
+    protected static void correct() {
+        System.out.println("Correct!");
+        score++;
+    }
+
+    protected static void incorrect() {
+        System.out.println("Incorrect!");
+    }
+
+    protected static void elsedo() {
+        System.out.println("Please enter a, b or c");
     }
 
     public int getScore() {

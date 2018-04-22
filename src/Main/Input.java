@@ -37,7 +37,7 @@ public class Input {
                 }
                 else {
                     msg4("Name");
-                    validation = false;
+                    break;
                 }
 
             }catch (Exception e) {
@@ -65,7 +65,7 @@ public class Input {
                 Scanner in3 = new Scanner(System.in);
                 msg1("year group");
                 yearGroup = in3.nextInt();
-                validation = false;
+                break;
             }
             catch (Exception e) {
                 System.out.println("Try again..");
@@ -91,13 +91,13 @@ public class Input {
                 choice = in.nextInt();
                 if (choice == 1) {
                     inputUsername();
-                    validation = false;
+                    break;
                 }else if (choice == 2) {
                     System.out.println("Generating username..");
                     ug.generateusername();
                     username = ug.getGeneratedUsername();
                     System.out.println("Username set to " + username);
-                    validation = false;
+                    break;
                 } else {
                     System.out.println("Please enter 1 or 2..");
                     validation = true;
@@ -136,7 +136,7 @@ public class Input {
 
                 }else {
                     msg4("Password");
-                    validation = false;
+                    break;
                 }
             }
             else {
@@ -160,17 +160,17 @@ public class Input {
 
                 if (subject.equalsIgnoreCase("history")) {
                     System.out.println("Subject set to history..");
-                    validation = false;
+                    break;
 
                 }
                 else if (subject.equalsIgnoreCase("music")) {
                     System.out.println("Subject set to music..");
-                    validation = false;
+                    break;
 
                 }
                 else if (subject.equalsIgnoreCase("computer science")) {
                     System.out.println("Subject set to computer science..");
-                    validation = false;
+                    break;
                 }
                 else {
                     System.out.println("Make sure you spelled the subject name correctly, please try again..");
@@ -197,15 +197,15 @@ public class Input {
 
                 if (difficulty.equalsIgnoreCase("easy")) {
                     System.out.println("Difficulty set to easy..");
-                    validation = false;
+                    break;
                 }
                 else if (difficulty.equalsIgnoreCase("medium")) {
                     System.out.println("Difficulty set to medium..");
-                    validation = false;
+                    break;
                 }
                 else if (difficulty.equalsIgnoreCase("hard")) {
                     System.out.println("Difficulty set to hard..");
-                    validation = false;
+                    break;
                 }else {
                     System.out.println("Please enter a valid difficulty..");
                     validation = true;
@@ -258,7 +258,7 @@ public class Input {
 
             }else {
                 msg4("Username");
-                validation = false;
+                break;
             }
 
         }while (validation == true);

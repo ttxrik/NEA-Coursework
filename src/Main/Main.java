@@ -1,6 +1,7 @@
 package Main;
 
 import Quiz.ComputerScience;
+import Quiz.History;
 
 /*
 - As of now (writing the code), I don't have a lot of experience with file writing and reading, which is why my folder
@@ -18,7 +19,8 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
 
-        ComputerScience.Easy();
+        History history = new History();
+        history.Easy();
 
 
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
-public class ComputerScience extends MainQuiz {
+public class ComputerScience extends MainQuiz{
 
     /* public static Scanner ReadFile() throws IOException {
 
@@ -25,6 +25,7 @@ public class ComputerScience extends MainQuiz {
     public static void Easy() throws IOException {
 
         boolean validation = true;
+        String line1;
 
         File q1txt = new File("src/Quiz/Questions/Easy/Computer Science/Q1.txt");
         File q2txt = new File("src/Quiz/Questions/Easy/Computer Science/Q2.txt");
@@ -46,14 +47,14 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
 
                 } else if (input.equalsIgnoreCase("b")) {
                     correct();
-                    validation = false;
+                    break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
-                    validation = false;
+                    break;
                 } else {
                     System.out.println("Please enter either a, b or c");
                     validation = true;
@@ -79,15 +80,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -128,14 +129,14 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
 
                 } else if (input.equalsIgnoreCase("b")) {
                     correct();
-                    validation = false;
+                    break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
-                    validation = false;
+                    break;
                 } else {
                     System.out.println("Please enter either a, b or c");
                     validation = true;
@@ -161,15 +162,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -195,15 +196,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -247,14 +248,14 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
 
                 } else if (input.equalsIgnoreCase("b")) {
                     correct();
-                    validation = false;
+                    break;
                 } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
-                    validation = false;
+                    break;
                 } else {
                     System.out.println("Please enter either a, b or c");
                     validation = true;
@@ -280,15 +281,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -314,15 +315,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -348,15 +349,15 @@ public class ComputerScience extends MainQuiz {
 
                 if (input.equalsIgnoreCase("a")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("b")) {
                     incorrect();
-                    validation = false;
+                    break;
                 }
                 else if (input.equalsIgnoreCase("c")) {
                     correct();
-                    validation = false;
+                    break;
                 }
                 else {
                     incorrect();
@@ -374,18 +375,6 @@ public class ComputerScience extends MainQuiz {
 
     }
 
-    protected static void correct() {
-        System.out.println("Correct!");
-        score++;
-    }
-
-    protected static void incorrect() {
-        System.out.println("Incorrect!");
-    }
-
-    protected static void elsedo() {
-        System.out.println("Please enter a, b or c");
-    }
 
     public int getScore() {
         return score;
