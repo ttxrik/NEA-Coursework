@@ -18,7 +18,11 @@ a graphical user interface, and actually cleaning up the code..*/
 
 public class Main {
 
+    public static String choice;
+
     public static void main(String[] args) throws Exception{
+
+        String choice;
 
         History history = new History();
         history.Hard();

@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import Main.Input;
+import Main.Main;
 
 public class MainQuiz {
 
@@ -12,14 +13,11 @@ public class MainQuiz {
     static String difficulty = input.getDifficultry();
     static String subject = input.getSubject();
 
-    public static int score;
-    public static int grade;
-    public static int percentage;
 
     public static void Quiz() throws IOException {
 
         History history = new History();
-        ComputerScience computerScience = new ComputerScience();
+        ComputerScience computerscience = new ComputerScience();
         Music music = new Music();
 
 
@@ -29,10 +27,10 @@ public class MainQuiz {
                 history.Easy();
             }
             else if (subject.equalsIgnoreCase("music")) {
-                Music.Easy();
+                music.Easy();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
-                //ComputerScience.Easy();
+                //computerscience.Easy();
             }
 
         }
@@ -42,10 +40,10 @@ public class MainQuiz {
                 history.Medium();
             }
             else if (subject.equalsIgnoreCase("music")) {
-                Music.Medium();
+                music.Medium();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
-                ComputerScience.Medium();
+                computerscience.Medium();
             }
 
         }
@@ -55,16 +53,31 @@ public class MainQuiz {
                 history.Hard();
             }
             else if (subject.equalsIgnoreCase("music")) {
-                Music.Hard();
+                music.Hard();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
-                ComputerScience.Hard();
+                computerscience.Hard();
             }
         }
-
-
     }
 
+    public static int getScore() {
+
+        int score = 0; // Initializing.
+
+        if (Main.choice.equalsIgnoreCase("cs")) {
+            score = ComputerScience.getScore();
+        }
+        else if (Main.choice.equalsIgnoreCase("music")) {
+            score = Music.getScore();
+        }
+        else if (Main.choice.equalsIgnoreCase("history")) {
+            score = History.getScore();
+        }
+
+        return score;
+
+    }
 
     protected static void incorrect() {
         System.out.println("Incorrect!");
@@ -74,6 +87,14 @@ public class MainQuiz {
         System.out.println("Please enter a, b or c");
     }
 
+    public static void finalOutput() {
+
+        int score = getScore();
+        String grade = GradeGenerator.getGrade();
+        int percentage = PercentageGenerator.getPercentage();
+
+        System.out.printf("Your score is %s, your percentage is %s and your grade is %s", score, percentage, grade);
+    }
 
 
 }
