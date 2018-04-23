@@ -265,31 +265,31 @@ public class Input {
     }
 
 
-    public String getUsername() {
+    public static String getUsername() {
         return username;
     }
 
-    public String getPassword() {
+    public static String getPassword() {
         return password;
     }
 
-    public String getDifficultry() {
+    public static String getDifficultry() {
         return difficulty;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public int getAge() {
+    public static int getAge() {
         return age;
     }
 
-    public int getYearGroup() {
+    public static int getYearGroup() {
         return yearGroup;
     }
 
-    public String getSubject() {
+    public static String getSubject() {
         return subject;
     }
 }

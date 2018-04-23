@@ -1,7 +1,5 @@
 package Quiz;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
 import Main.Input;
@@ -24,12 +22,15 @@ public class MainQuiz {
         if (difficulty.equalsIgnoreCase("easy")) {
 
             if (subject.equalsIgnoreCase("history")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Easy();
             }
             else if (subject.equalsIgnoreCase("music")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Easy();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Easy();
             }
 
@@ -37,12 +38,15 @@ public class MainQuiz {
         else if (difficulty.equalsIgnoreCase("medium")) {
 
             if (subject.equalsIgnoreCase("history")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Medium();
             }
             else if (subject.equalsIgnoreCase("music")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Medium();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Medium();
             }
 
@@ -50,12 +54,15 @@ public class MainQuiz {
         else if (difficulty.equalsIgnoreCase("hard")) {
 
             if (subject.equalsIgnoreCase("history")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Hard();
             }
             else if (subject.equalsIgnoreCase("music")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Hard();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
+                System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Hard();
             }
         }

@@ -9,10 +9,7 @@ public class UsernameGenerator {
 
         Input input = new Input();
 
-        System.out.println("test");
-
         String name = input.getName();
-        System.out.println(name);
 
         String firstpart = name.substring(0 ,3);
         int lastpart = input.getAge();

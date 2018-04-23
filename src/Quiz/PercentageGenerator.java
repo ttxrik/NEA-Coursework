@@ -24,8 +24,6 @@ public class PercentageGenerator  extends MainQuiz{
             percentage = 0;
         }
 
-
-
     }
 
     public static int getPercentage() {
