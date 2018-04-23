@@ -30,7 +30,7 @@ public class MainQuiz {
                 music.Easy();
             }
             else if (subject.equalsIgnoreCase("computer science")) {
-                //computerscience.Easy();
+                computerscience.Easy();
             }
 
         }
