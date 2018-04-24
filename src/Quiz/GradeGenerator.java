@@ -3,11 +3,12 @@ package Quiz;
 
 public class GradeGenerator extends MainQuiz{
 
-    int score = MainQuiz.getScore();
+    static int score = MainQuiz.getScore();
 
     public static String grade;
 
-    private void GenerateGrade() {
+
+    public static String getGrade() {
 
         if (score <= 2 || score <= 2 || score <= 2) {
             grade = "C";
@@ -22,9 +23,6 @@ public class GradeGenerator extends MainQuiz{
             grade = "U";
         }
 
-    }
-
-    public static String getGrade() {
         return grade;
     }
 }

@@ -19,8 +19,6 @@ a graphical user interface, and actually cleaning up the code..*/
 
 public class Main {
 
-    public static String choice;
-
     public static void main(String[] args) throws Exception {
 
         boolean validation = true;
@@ -29,7 +27,7 @@ public class Main {
             try {
                 int t;
                 Scanner in = new Scanner(System.in);
-                System.out.println("1) Start\n\n2) Exit");
+                System.out.println("\n1) Start\n\n2) Exit");
                 t = in.nextInt();
 
                 if (t == 1) {
@@ -39,6 +37,7 @@ public class Main {
                     Input.Difficulty();
 
                     MainQuiz.Quiz();
+                    MainQuiz.Results();
 
                 } else if (t == 2) {
                     System.out.println("Exiting..");

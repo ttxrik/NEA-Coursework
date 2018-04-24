@@ -22,6 +22,3 @@ public class UsernameGenerator {
         return finalUsername;
     }
 }
-
-
-

@@ -72,13 +72,13 @@ public class MainQuiz {
 
         int score = 0; // Initializing.
 
-        if (Main.choice.equalsIgnoreCase("cs")) {
+        if (Input.getSubject().equalsIgnoreCase("computer science")) {
             score = ComputerScience.getScore();
         }
-        else if (Main.choice.equalsIgnoreCase("music")) {
+        else if (Input.getSubject().equalsIgnoreCase("music")) {
             score = Music.getScore();
         }
-        else if (Main.choice.equalsIgnoreCase("history")) {
+        else if (Input.getSubject().equalsIgnoreCase("history")) {
             score = History.getScore();
         }
 
@@ -94,13 +94,13 @@ public class MainQuiz {
         System.out.println("Please enter a, b or c");
     }
 
-    public static void finalOutput() {
+    public static void Results() {
 
         int score = getScore();
         String grade = GradeGenerator.getGrade();
         int percentage = PercentageGenerator.getPercentage();
 
-        System.out.printf("Your score is %s, your percentage is %s and your grade is %s", score, percentage, grade);
+        System.out.printf("Your score is %s, your percentage is %s and your grade is %s\n", score, percentage, grade);
     }
 
 

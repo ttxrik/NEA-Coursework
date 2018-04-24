@@ -1,32 +1,55 @@
 package Quiz;
 
-public class PercentageGenerator  extends MainQuiz{
+import Main.Main;
+
+public class PercentageGenerator {
 
     public static int percentage;
 
-    int score = MainQuiz.getScore();
+    /*
+     I made a seperate method for the selection in the method below and never called that method. Therefore, the percentage
+      was returned as 0 / null. DONT REPEAT THIS MISTAKE AGAIN!!!!
 
-    public void GeneratePercentage() {
+      public void GeneratePercentage() {
 
-        if (score == 4) {
+        if (MainQuiz.getScore() == 4) {
             percentage = 100;
         }
-        else if (score == 3) {
+        else if (MainQuiz.getScore() == 3) {
             percentage = 75;
         }
-        else if (score == 2) {
+        else if (MainQuiz.getScore() == 2) {
             percentage = 50;
         }
-        else if (score == 1) {
+        else if (MainQuiz.getScore() == 1) {
             percentage = 25;
         }
-        else if (score == 0) {
+        else if (MainQuiz.getScore() == 0) {
             percentage = 0;
         }
+      }
+      */
 
-    }
 
     public static int getPercentage() {
-        return percentage;
+
+            if (MainQuiz.getScore() == 4) {
+                percentage = 100;
+            }
+            else if (MainQuiz.getScore() == 3) {
+                percentage = 75;
+            }
+            else if (MainQuiz.getScore() == 2) {
+                percentage = 50;
+            }
+            else if (MainQuiz.getScore() == 1) {
+                percentage = 25;
+            }
+            else if (MainQuiz.getScore() == 0) {
+                percentage = 0;
+            }
+
+            return percentage;
     }
+
 }
