@@ -1,7 +1,8 @@
 package Main;
 
+import Generators.UsernameGenerator;
+
 import java.util.Scanner;
-import java.util.regex.*;
 
 public class Input {
 

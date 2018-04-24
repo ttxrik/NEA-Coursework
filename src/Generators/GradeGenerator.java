@@ -1,7 +1,9 @@
-package Quiz;
+package Generators;
 
 
-public class GradeGenerator extends MainQuiz{
+import Quiz.MainQuiz;
+
+public class GradeGenerator extends MainQuiz {
 
     static int score = MainQuiz.getScore();
 

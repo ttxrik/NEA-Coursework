@@ -1,5 +1,6 @@
 package Main;
 
+import Files.FileWriter;
 import Quiz.ComputerScience;
 import Quiz.History;
 import Quiz.MainQuiz;
@@ -38,6 +39,7 @@ public class Main {
 
                     MainQuiz.Quiz();
                     MainQuiz.Results();
+                    FileWriter.filewriter();
 
                 } else if (t == 2) {
                     System.out.println("Exiting..");

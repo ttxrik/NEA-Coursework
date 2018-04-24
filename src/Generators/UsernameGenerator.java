@@ -1,4 +1,6 @@
-package Main;
+package Generators;
+
+import Main.Input;
 
 public class UsernameGenerator {
 

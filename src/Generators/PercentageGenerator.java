@@ -1,14 +1,15 @@
-package Quiz;
+package Generators;
 
 import Main.Main;
+import Quiz.MainQuiz;
 
 public class PercentageGenerator {
 
     public static int percentage;
 
     /*
-     I made a seperate method for the selection in the method below and never called that method. Therefore, the percentage
-      was returned as 0 / null. DONT REPEAT THIS MISTAKE AGAIN!!!!
+     I made a separate method for the selection in the method below and never called that method. Therefore, the percentage
+      was returned as 0 / null. DON'T REPEAT THIS MISTAKE AGAIN!!!!
 
       public void GeneratePercentage() {
 

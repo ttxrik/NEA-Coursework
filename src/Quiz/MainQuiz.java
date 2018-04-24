@@ -2,8 +2,9 @@ package Quiz;
 
 import java.io.IOException;
 
+import Generators.GradeGenerator;
+import Generators.PercentageGenerator;
 import Main.Input;
-import Main.Main;
 
 public class MainQuiz {
 
