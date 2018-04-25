@@ -37,6 +37,8 @@ public class Main {
                     Input.Subject();
                     Input.Difficulty();
 
+                    System.out.println(FileWriter.filepath());
+
                     MainQuiz.Quiz();
                     MainQuiz.Results();
                     FileWriter.filewriter();
