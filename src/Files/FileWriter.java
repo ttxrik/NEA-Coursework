@@ -74,8 +74,6 @@ public class FileWriter {
                 JOptionPane.showMessageDialog(null, "File has been saved as " + filename());
             }
             else if (file.exists()) {
-                System.out.println("Works!");
-
                 PrintWriter pw = new PrintWriter(new FileOutputStream(new File(filepath()), true));
 
                 pw.println("------------------------------------------------------------------------------------");
