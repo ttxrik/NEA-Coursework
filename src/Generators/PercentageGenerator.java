@@ -34,23 +34,19 @@ public class PercentageGenerator {
 
     public static int getPercentage() {
 
-            if (MainQuiz.getScore() == 4) {
-                percentage = 100;
-            }
-            else if (MainQuiz.getScore() == 3) {
-                percentage = 75;
-            }
-            else if (MainQuiz.getScore() == 2) {
-                percentage = 50;
-            }
-            else if (MainQuiz.getScore() == 1) {
-                percentage = 25;
-            }
-            else if (MainQuiz.getScore() == 0) {
-                percentage = 0;
-            }
+        if (MainQuiz.getScore() == 4) {
+            percentage = 100;
+        } else if (MainQuiz.getScore() == 3) {
+            percentage = 75;
+        } else if (MainQuiz.getScore() == 2) {
+            percentage = 50;
+        } else if (MainQuiz.getScore() == 1) {
+            percentage = 25;
+        } else if (MainQuiz.getScore() == 0) {
+            percentage = 0;
+        }
 
-            return percentage;
+        return percentage;
     }
 
 }

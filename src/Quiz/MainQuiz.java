@@ -25,44 +25,36 @@ public class MainQuiz {
             if (subject.equalsIgnoreCase("history")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Easy();
-            }
-            else if (subject.equalsIgnoreCase("music")) {
+            } else if (subject.equalsIgnoreCase("music")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Easy();
-            }
-            else if (subject.equalsIgnoreCase("computer science")) {
+            } else if (subject.equalsIgnoreCase("computer science")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Easy();
             }
 
-        }
-        else if (difficulty.equalsIgnoreCase("medium")) {
+        } else if (difficulty.equalsIgnoreCase("medium")) {
 
             if (subject.equalsIgnoreCase("history")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Medium();
-            }
-            else if (subject.equalsIgnoreCase("music")) {
+            } else if (subject.equalsIgnoreCase("music")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Medium();
-            }
-            else if (subject.equalsIgnoreCase("computer science")) {
+            } else if (subject.equalsIgnoreCase("computer science")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Medium();
             }
 
-        }
-        else if (difficulty.equalsIgnoreCase("hard")) {
+        } else if (difficulty.equalsIgnoreCase("hard")) {
 
             if (subject.equalsIgnoreCase("history")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 history.Hard();
-            }
-            else if (subject.equalsIgnoreCase("music")) {
+            } else if (subject.equalsIgnoreCase("music")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 music.Hard();
-            }
-            else if (subject.equalsIgnoreCase("computer science")) {
+            } else if (subject.equalsIgnoreCase("computer science")) {
                 System.out.println("Starting quiz!\n----------------------------------------------------------");
                 computerscience.Hard();
             }
@@ -75,11 +67,9 @@ public class MainQuiz {
 
         if (Input.getSubject().equalsIgnoreCase("computer science")) {
             score = ComputerScience.getScore();
-        }
-        else if (Input.getSubject().equalsIgnoreCase("music")) {
+        } else if (Input.getSubject().equalsIgnoreCase("music")) {
             score = Music.getScore();
-        }
-        else if (Input.getSubject().equalsIgnoreCase("history")) {
+        } else if (Input.getSubject().equalsIgnoreCase("history")) {
             score = History.getScore();
         }
 

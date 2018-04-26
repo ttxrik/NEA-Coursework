@@ -114,17 +114,14 @@ public class Music extends QuestionInterface {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     correct();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }
@@ -135,7 +132,6 @@ public class Music extends QuestionInterface {
 
             }
         } while (validation = true);
-
 
 
     }
@@ -191,17 +187,14 @@ public class Music extends QuestionInterface {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     correct();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }
@@ -224,18 +217,15 @@ public class Music extends QuestionInterface {
                 if (input.equalsIgnoreCase("a")) {
                     correct();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A3();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
                     A3();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }
@@ -300,17 +290,14 @@ public class Music extends QuestionInterface {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A2();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     correct();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }
@@ -333,18 +320,15 @@ public class Music extends QuestionInterface {
                 if (input.equalsIgnoreCase("a")) {
                     correct();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A3();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
                     A3();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }
@@ -367,18 +351,15 @@ public class Music extends QuestionInterface {
                 if (input.equalsIgnoreCase("a")) {
                     correct();
                     break;
-                }
-                else if (input.equalsIgnoreCase("b")) {
+                } else if (input.equalsIgnoreCase("b")) {
                     incorrect();
                     A4();
                     break;
-                }
-                else if (input.equalsIgnoreCase("c")) {
+                } else if (input.equalsIgnoreCase("c")) {
                     incorrect();
                     A4();
                     break;
-                }
-                else {
+                } else {
                     elsedo();
                     validation = true;
                 }

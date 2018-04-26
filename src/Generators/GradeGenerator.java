@@ -14,14 +14,11 @@ public class GradeGenerator extends MainQuiz {
 
         if (score <= 2 || score <= 2 || score <= 2) {
             grade = "C";
-        }
-        else if (score == 3 || score == 3 || score == 3) {
+        } else if (score == 3 || score == 3 || score == 3) {
             grade = "B";
-        }
-        else if (score == 4 || score == 4 || score == 4) {
+        } else if (score == 4 || score == 4 || score == 4) {
             grade = "A";
-        }
-        else {
+        } else {
             grade = "U";
         }
 

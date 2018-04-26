@@ -13,10 +13,10 @@ public class UsernameGenerator {
 
         String name = input.getName();
 
-        String firstpart = name.substring(0 ,3);
+        String firstpart = name.substring(0, 3);
         int lastpart = input.getAge();
 
-        finalUsername = firstpart+lastpart;
+        finalUsername = firstpart + lastpart;
 
     }
 
