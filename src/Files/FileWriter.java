@@ -47,22 +47,23 @@ public class FileWriter {
         boolean validation = true;
 
         File file = new File(filepath());
-        PrintWriter pw = new PrintWriter(file);
 
-            if (!file.exists() || !file.isFile()) {
+            if (!file.exists()) {
+                PrintWriter pw = new PrintWriter(file);
+
 
                 pw.println("------------------------------------------------------------------------------------");
-                pw.println("Name: " + Input.getName());
-                pw.println("Age: " + Input.getAge());
-                pw.println("Password: " + Input.getPassword());
-                pw.println("Year group: " + Input.getYearGroup());
-                pw.println("Username: " + Input.getUsername());
-                pw.println("Subject: " + Input.getSubject());
-                pw.println("Difficulty: " + Input.getDifficultry());
-                pw.println("Score: " + MainQuiz.getScore());
-                pw.println("Percentage: " + PercentageGenerator.getPercentage());
-                pw.println("Grade: " + GradeGenerator.getGrade());
-                pw.println("------------------------------------------------------------------------------------");
+                pw.println("\nName: " + Input.getName());
+                pw.println("\nAge: " + Input.getAge());
+                pw.println("\nPassword: " + Input.getPassword());
+                pw.println("\nYear group: " + Input.getYearGroup());
+                pw.println("\nUsername: " + Input.getUsername());
+                pw.println("\nSubject: " + Input.getSubject());
+                pw.println("\nDifficulty: " + Input.getDifficultry());
+                pw.println("\nScore: " + MainQuiz.getScore());
+                pw.println("\nPercentage: " + PercentageGenerator.getPercentage());
+                pw.println("\nGrade: " + GradeGenerator.getGrade());
+                pw.println("\n------------------------------------------------------------------------------------");
                 pw.println("\n");
                 pw.println("\n");
                 pw.println("\n");
@@ -75,14 +76,29 @@ public class FileWriter {
             else if (file.exists()) {
                 System.out.println("Works!");
 
-                // append operation..
+                PrintWriter pw = new PrintWriter(new FileOutputStream(new File(filepath()), true));
 
-                JOptionPane.showMessageDialog(null, "Data appended!");
+                pw.println("------------------------------------------------------------------------------------");
+                pw.println("\nName: " + Input.getName());
+                pw.println("\nAge: " + Input.getAge());
+                pw.println("\nPassword: " + Input.getPassword());
+                pw.println("\nYear group: " + Input.getYearGroup());
+                pw.println("\nUsername: " + Input.getUsername());
+                pw.println("\nSubject: " + Input.getSubject());
+                pw.println("\nDifficulty: " + Input.getDifficultry());
+                pw.println("\nScore: " + MainQuiz.getScore());
+                pw.println("\nPercentage: " + PercentageGenerator.getPercentage());
+                pw.println("\nGrade: " + GradeGenerator.getGrade());
+                pw.println("\n------------------------------------------------------------------------------------");
+                pw.println("\n");
+                pw.println("\n");
+                pw.println("\n");
+                pw.println("\n");
+
+                pw.close();
+
+                JOptionPane.showMessageDialog(null, "Data has been saved");
             }
-
-
-
-
     }
 
 
