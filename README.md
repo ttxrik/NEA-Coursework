@@ -1,6 +1,6 @@
 # NEA-Coursework
 
-This my computer science courseowork by OCR. Since the coursework got leaked, the examination has been changed to 100% exam and 0% coursework. Therefore, I decided to make my own version of the coursework as it did not count.
+This my computer science course work by OCR. Since the coursework got leaked, the examination has been changed to 100% exam and 0% coursework. Therefore, I decided to make my own version of the coursework as it did not count.
 
 I was given around a year, and I completed it in around 10 hours.
 
