@@ -6,3 +6,7 @@ I was given around a year, and I completed it in around 10 hours.
 
 This program has more than 1000 lines of code which is probably the most in the entire country..
 
+If you would like to try out the program, go to the Release tab.
+
+Also, i'll be declining pull requests as it is and should only be my own work.
+
