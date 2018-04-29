@@ -1,0 +1,17 @@
+To run the program on windows only, simply execute the Quiz batch file. To run the program on ANY computer, go into the terminal,
+cd into this directory, and type 'java -jar Quiz.jar' (don't include the 'speech marks').
+
+The 'src' folder contains all the code. The 'Users' folder is where all the users' data will be stored.
+
+================================================================================================================================
+
+
+More than 1000 lines of code! Good luck,
+
+Tarik Tekelioglu - Aylward Academy.
+
+
+
+
+
+Teacher - Mr Seedin.
