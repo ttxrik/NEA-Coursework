@@ -6,7 +6,7 @@ The 'src' folder contains all the code. The 'Users' folder is where all the user
 ================================================================================================================================
 
 
-More than 1000 lines of code! Good luck,
+More than 2000 lines of code! Good luck,
 
 Tarik Tekelioglu - Aylward Academy.
 
